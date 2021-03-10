@@ -30,7 +30,8 @@ def get_daily_discussion_post(subreddit_instance: praw.models.Subreddit):
         The submission object for the discussion post, or None if it couldn't be found.
     Works by searching the stickied posts of the subreddit for a post with 'daily discussion' in the title.
     """
-    for sticky_num in range(1, 2):
+    print('Searching stickied posts for daily discussion posts..')
+    for sticky_num in [1, 2]:
         discussion_post = subreddit_instance.sticky(number=sticky_num)
         if 'daily discussion' in discussion_post.title.lower():
             print(f'Got daily discussion post, title {discussion_post.title}')
