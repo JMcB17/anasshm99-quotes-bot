@@ -7,6 +7,8 @@ import random
 import praw
 
 
+__version__ = '0.1.0'
+
 MIN_INTERVAL_HOURS = 2
 MAX_INTERVAL_HOURS = 5
 SUBREDDIT = 'CryptoCurrency'
@@ -49,7 +51,7 @@ def main():
     reddit = praw.Reddit(
         client_id=login_details['client_id'],
         client_secret=login_details['client_secret'],
-        user_agent=login_details['user_agent'],
+        user_agent=login_details['user_agent'].format(version=__version__),
         username=login_details['username'],
         password=login_details['password']
     )

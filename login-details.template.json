@@ -1,7 +1,7 @@
 {
   "client_id": "",
   "client_secret": "",
-  "user_agent": "praw:CryptoCurrency-quotes-bot (by u/YourRedditUsername)",
+  "user_agent": "praw:CryptoCurrency-quotes-bot:v{version} (by u/YourRedditUsername)",
   "username": "",
   "password": ""
 }
