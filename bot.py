@@ -16,7 +16,7 @@ import praw
 from keep_alive import keep_alive
 
 
-__version__ = '0.1.0'
+__version__ = '1.0.0'
 
 MIN_INTERVAL_HOURS = 2
 MAX_INTERVAL_HOURS = 5
