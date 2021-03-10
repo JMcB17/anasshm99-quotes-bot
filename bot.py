@@ -13,6 +13,8 @@ import random
 
 import praw
 
+from keep_alive import keep_alive
+
 
 __version__ = '0.1.0'
 
@@ -104,4 +106,5 @@ def main():
 
 
 if __name__ == '__main__':
+    keep_alive()
     main()
